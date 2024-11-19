@@ -54,7 +54,7 @@ target_link_libraries(ros2_livox libboost_chrono.so.1.71.0)
 target_include_directories(ros2_livox PRIVATE include)
 
 #install(TARGETS ros2_livox DESTINATION lib/${PROJECT_NAME})
-
+install(DIRECTORY meshes DESTINATION share/${PROJECT_NAME})
 install(TARGETS ros2_livox
     LIBRARY DESTINATION lib)
 

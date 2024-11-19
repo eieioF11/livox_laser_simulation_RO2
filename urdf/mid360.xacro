@@ -29,8 +29,11 @@
 <link name="${name}">
 <xacro:box_inertia m="${length}" w="${width}" d="${length}" h="${height}"/>
   <visual>
-        <geometry>
+        <!-- <geometry>
             <box size="${length} ${width} ${height}"/>
+        </geometry> -->
+        <geometry>
+            <mesh filename="file://$(find ros2_livox_simulation)/meshes/mid-360.stl" scale="1 1 1"/>
         </geometry>
   </visual>
 </link>
